@@ -46,8 +46,8 @@ export class TemaService {
         })
     }
 
-    async create(Tema: Tema): Promise<Tema> {
-        return await this.temaRepository.save(Tema);
+    async create(tema: Tema): Promise<Tema> {
+        return await this.temaRepository.save(tema);
     }
 
     async update(tema: Tema): Promise<Tema> {
