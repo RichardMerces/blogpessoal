@@ -6,8 +6,8 @@ import { TemaService } from "../services/tema.service";
 
 @ApiTags('Tema')
 @UseGuards(JwtAuthGuard)
-@ApiBearerAuth()
 @Controller("/tema")
+@ApiBearerAuth()
 export class TemaController {
   constructor(private readonly temaService: TemaService) { }
 

@@ -6,8 +6,8 @@ import { PostagemService } from "../services/postagem.service";
 
 @ApiTags('Postagem')
 @UseGuards(JwtAuthGuard)
-@ApiBearerAuth()
 @Controller("/postagens")
+@ApiBearerAuth()
 export class PostagemController {
     constructor(private readonly postagemService: PostagemService) { }
 

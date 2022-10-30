@@ -7,22 +7,22 @@ import { Usuario } from "../../usuario/entities/usuario.entity";
 @Entity({name: "tb_postagens"})
 export class Postagem {
 
-    @PrimaryGeneratedColumn()
     @ApiProperty()
+    @PrimaryGeneratedColumn()
     id: number
 
+    @ApiProperty()
     @IsNotEmpty()
     @Column({length: 100, nullable: false})
-    @ApiProperty()
     titulo: string
 
-    @IsNotEmpty()
     @ApiProperty()
+    @IsNotEmpty()
     @Column({length: 1000, nullable: false})
     texto: string
 
-    @UpdateDateColumn()
     @ApiProperty()
+    @UpdateDateColumn()
     data: Date
 
     @ApiProperty({ type: () => Tema })
