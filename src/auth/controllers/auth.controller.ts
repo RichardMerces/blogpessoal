@@ -4,7 +4,7 @@ import { UsuarioLogin } from "../entities/usuariologin.entity";
 import { LocalAuthGuard } from "../guard/local-auth.guard";
 import { AuthService } from "../services/auth.service";
 
-@ApiTags('Autorização')
+@ApiTags('Usuario')
 @Controller("/auth")
 export class AuthController {
     constructor(private authService: AuthService) { }
